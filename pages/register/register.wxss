@@ -1,0 +1,59 @@
+/* pages/register/register.wxss */
+page {
+  height: 100%;
+  background-color:#fff;
+}
+.login-input {
+  margin: 0 auto;
+  width: 600rpx;
+  margin-top: 50rpx;
+  position: relative;
+}
+input{
+  width: 600rpx;
+  border-bottom: 1rpx solid rgba(230,229,229,1);
+  /* text-align: center; */
+  padding: 10rpx;
+  height: 50rpx;
+  box-sizing:initial;
+
+}
+.login-bottom {
+  margin-top: 200rpx;
+}
+.placeholder {
+  font-size:28rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.denglu, .denglu button{
+  width: 600rpx;
+  margin:  0 auto;
+  margin-top: 20px;
+}
+
+.login-input-ab {
+  position: absolute;
+  width: 30%;
+  height: 50rpx;
+  font-size:24rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(255,255,255,1); 
+  right: 0rpx;
+  bottom: 0rpx; 
+  z-index: 10;
+}
+
+.passow-ts  {
+ /* height:71px; */
+font-size:24rpx;
+font-family:SourceHanSansCN-Regular;
+font-weight:400;
+color:rgba(102,102,102,1);
+line-height:48rpx; 
+width: 600rpx;
+margin:0 auto;
+margin-top: 20rpx;
+}

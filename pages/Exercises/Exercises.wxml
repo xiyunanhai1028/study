@@ -1,0 +1,54 @@
+<!--pages/Exercises/Exercises.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">练习</view>
+    </navigator>
+  </view>
+</view>
+<view class='zn-lx'  wx:if="{{paperTotalNum !== 0}}">
+<view class='zn-lx-1'>
+<view class='zn-lx-1-p'>快速智能练习</view>
+<view class='zn-lx-1-l'>{{questionNo}}/{{paperTotalNum}}</view>
+</view>
+<view class='zn-lx-2'>
+  <view class='zn-lx-2-t'>(单选题）{{courseData.questionContent}}：</view>
+  <view class='zn-lx-2-ul'>
+    <view class='zn-lx-2-li'>
+      <view class='zn-lx-2-l'>
+        <view class='zn-lx-2-x {{activeN === "A" ? "active-zn" : ""}}' data-data='A'  bindtap='touchABCD'>A</view>
+      </view>
+      <view class='zn-lx-2-r'>{{courseData.chooseA}}</view>
+    </view>
+    <view class='zn-lx-2-li'>
+      <view class='zn-lx-2-l'>
+        <view class='zn-lx-2-x {{activeN === "B" ? "active-zn" : ""}}' data-data='B'  bindtap='touchABCD'>B</view>
+      </view>
+      <view class='zn-lx-2-r'>
+{{courseData.chooseB}}</view>
+    </view>
+    <view class='zn-lx-2-li'>
+      <view class='zn-lx-2-l'>
+        <view class='zn-lx-2-x {{activeN === "C" ? "active-zn" : ""}}' data-data='C'  bindtap='touchABCD'>C</view>
+      </view>
+      <view class='zn-lx-2-r'>
+{{courseData.chooseC}}</view>
+    </view>
+  </view>
+    <view class='zn-lx-2-li'>
+      <view class='zn-lx-2-l'>
+        <view class='zn-lx-2-x {{activeN === "D" ? "active-zn" : ""}}' data-data='D'  bindtap='touchABCD'>D</view>
+      </view>
+      <view class='zn-lx-2-r'>
+{{courseData.chooseD}}</view>
+    </view>
+
+</view>
+
+  <view class='xia-yi-ti' bindtap='gpPage'>{{question !== paperTotalNum ? "下一题" : "提交并生成答案"}}</view>
+  <!-- <view class='xia-yi-ti' wx:if="{{question === 15}}" bindtap='sunDaan'>提交答案</view> -->
+</view>
+<view  wx:if="{{paperTotalNum === 0}}" style='text-align:center;height:300rpx;line-height:300rpx;'>
+无数据
+</view>

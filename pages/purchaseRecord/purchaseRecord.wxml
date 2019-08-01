@@ -1,0 +1,23 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">购买记录</view>
+    </navigator>
+  </view>
+</view>
+
+<view class='dian-mu'>
+<view class='dian-li' wx:for="{{courseList}}">
+   <view class='dian-tiyle'>订单编号：{{item.orderNo}}</view>
+   <view class='dian-tiyle dian-huiyuan'>
+      <view class='dian-huiyuan-l'>会员：{{item.orderName}}</view>
+      <view class='dian-huiyuan-r'>支付价格：{{item.money
+}}</view>
+   </view>
+   <view class='dian-tiyle dian-huiyuan'>
+   <view class='dian-huiyuan-l'>创建时间：{{item.orderTime}}</view>
+      <view class='dian-huiyuan-r'>{{item.status}}</view>
+   </view>   
+</view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/freeCourse/freeCourse.wxml-->
+<view>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">免费课程</view>
+    </navigator>
+  </view>
+</view>
+<view class='che-che-list'>
+   <view wx:for="{{courseList}}" data-id="{{item.id}}"  class='scroll-view-li flex p-xs margin-bottom-sm mb-sm'  data-page="../../pages/videoDetails/videoDetails" bindtap='gpPage'>
+  <view class='flex-sub padding-sm margin-xs radius'>
+       <image class='shipin'  src='https://wq.juren5280.com/eduOnline{{item.courseImg}}'></image>
+       <view class='bofang-fd'>
+       <image class='bofang' src='../../images/shipinbofang.png'></image>
+       </view>
+  </view>
+     <view class='flex-twice  padding-sm margin-xs radius'>
+       <view> {{item.courseName}}           
+       </view>
+       <view class='time'>
+          {{item.courseTime}}小时
+       </view>
+     </view>
+  </view>
+</view>
+</view>

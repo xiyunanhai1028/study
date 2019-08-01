@@ -1,0 +1,29 @@
+/* pages/logOrRegister/logOrRegister.wxss */
+page,.logOrRegister {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.logOrRegister .log-bottom {
+  margin-top: 50%;
+}
+.logOrRegister .denglu {
+  text-align: center;
+  margin-top: 30rpx;
+}
+.logOrRegister .denglu button {
+  width: 70%;
+  text-align: center;
+}
+button{
+  position: relative;
+}
+navigator{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 80rpx;
+}

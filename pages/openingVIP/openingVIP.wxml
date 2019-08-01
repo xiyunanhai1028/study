@@ -1,0 +1,31 @@
+<!--pages/openingVIP/openingVIP.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">开通VIP</view>
+    </navigator>
+  </view>
+</view>
+<view class='cu-list menu menu-avatar'>
+  <view class='cu-item'>
+    <view class='cu-avatar round lg' style='background-image:url(https://image.weilanwl.com/img/square-1.jpg);'> </view>
+    <view class='content'>
+      <view class='text-grey'>wangxddddd</view>
+      <view class='text-gray text-sm'>sssssss</view>
+    </view>
+  </view>
+</view>
+<view class='sect-t-c'>
+  请选择VIP套餐
+</view>
+<view class='grid col-2 margin-bottom text-center'>
+  <view>
+    <view class='cu-btn line-blue button-hover'>158元/年</view>
+  </view>
+  <view>
+    <view class='cu-btn line-gray button-hover'>50元/月</view>
+  </view>  
+</view>
+
+<view class='q-r-z-f-btn' bindtap='gpPage'>确认支付</view>

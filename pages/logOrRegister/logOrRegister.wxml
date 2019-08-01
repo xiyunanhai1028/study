@@ -1,0 +1,19 @@
+<view class='logOrRegister bg-white'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <!-- <navigator class='action' open-type="navigateBack" delta="1" hover-class="none"> -->
+      <!-- <text class='icon-back'></text> -->
+      <!-- <text>操作条</text> -->
+    <!-- </navigator> -->
+  </view>
+</view>
+<view class='log-bottom'>
+    <view class='denglu'>
+    <button class='cu-btn bg-cyan margin-tb-sm lg'><navigator url='../../pages/SignIn/SignIn'>立即登录</navigator></button>
+    </view>
+    <view class='denglu'>
+        <button class='cu-btn line-cyan lg'><navigator url='../../pages/register/register'>注册    </navigator></button>
+    </view>
+    
+</view>
+</view>

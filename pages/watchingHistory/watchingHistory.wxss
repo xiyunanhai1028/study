@@ -1,0 +1,56 @@
+/* pages/freeCourse/freeCourse.wxss */
+.che-che-list {
+  padding: 30rpx 0px;
+  background: #fff;
+}
+.scroll-view-li {
+  width:700rpx;
+  height:200rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:1rpx 9rpx 12rpx 1rpx rgba(37,37,37,0.09);
+  border-radius:10rpx;  
+  margin:  0 auto;
+  margin-bottom: 30rpx;
+  padding:10rpx;
+}
+
+.scroll-view-list {
+  padding: 30rpx 0;
+}
+.flex-sub {
+  padding: 0px;
+  position: relative;
+}
+.flex-sub .shipin{
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.flex-sub .bofang-fd image {
+  width: 69rpx;
+  height: 69rpx;  
+    line-height: 100%;
+}
+
+.bofang-fd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  line-height: 230rpx;
+}
+.flex-twice {
+  position: relative;
+  text-align: left;
+  padding: 0px;
+  padding-top: 20rpx;
+}
+.time {
+  font-size:25rpx;
+  color:rgba(153,153,153,1);
+  position: absolute;
+  bottom: 10rpx;
+  left: 0px;
+}/* pages/watchingHistory/watchingHistory.wxss */

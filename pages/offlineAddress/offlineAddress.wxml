@@ -1,0 +1,30 @@
+<!--pages/offlineAddress/offlineAddress.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">线下地址</view>
+    </navigator>
+  </view>
+</view>
+  <checkbox-group class="block margin-bottom" bindchange="checkboxHandler">
+    <view class="cu-form-group margin-top"  wx:for="{{viplist}}" wx:for-index="index">
+      <view class='title'>
+          <view>课程： {{item.courseName}}</view>
+         <view>地址： {{item.courseAddress}}</view>
+         <view>总人数： {{item.totalNum}}人</view>
+         <view>报名人数： {{item.orderNum}}人</view>
+         <view>报名金额： {{item.money}}元</view>
+      </view>
+      <checkbox class='blue' value="{{index}}"></checkbox>
+    </view>
+  </checkbox-group>
+
+<view class='fixed'>
+  <view class='grid col-2 margin-bottom text-center'>
+    <view class='f-x-l'></view>
+    <view class='g-m-vip-f'>
+      <view class='g-m-vip' data-page="../../pages/openingVIP/openingVIP" bindtap='gpPage'>去付款</view>
+    </view>
+  </view>
+</view>

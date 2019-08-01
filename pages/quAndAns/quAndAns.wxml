@@ -1,0 +1,86 @@
+<!--pages/quAndAns/quAndAns.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">练习</view>
+    </navigator>
+  </view>
+</view>
+<view wx:if="{{paperTotalNum !== 0}}"  class='quAndAns'>
+  <view class='zn-lx-1'>
+    <view class='zn-lx-1-p'>快速智能练习</view>
+    <view class='zn-lx-1-l'>{{question}}/{{paperTotalNum}}</view>
+  </view>
+  <view>
+    <view class='zn-lx-2-t'>(问答题）{{courseData.questionContent}}</view>
+    <view class='ans'>
+        <!-- 答“坚持依法，自愿，有偿的基本原则。鼓励农户
+        依法采取转包，出租，互换等方式流转承包地。没
+        有农户的书面委托，农村基层组织无权以任何方式
+        决定流转农户的承包地                           -->
+        {{anserWt}}
+    </view>
+
+    <view>
+    <view class='rowCenter' style='width:100%;margin-top:60rpx;'>
+    <view class='voice' style='width:auto;margin-top:0;flex-grow:1;position:relative'>
+      <view>
+        <image src='../../images/voice.png' mode='widthFix'></image>
+        <!-- <text space='ensp'>Status: {{voice.tip}}</text> -->
+      </view>
+      <movable-area  class="movable-area" id="movable-area">
+        <movable-view disabled='{{!voice.canPlay}}'  bindchange="voiceSeekMove" bindtouchend='seekTouchEnd' direction="horizontal" class='movable-view' style="opacity:{{voice.canPlay?'1':'0'}}" id="movable-view" x="{{voice.margin}}" damping="1000">
+          <text style='font-size:20rpx;font-family:NotoSansHans-Regular;font-weight:400;color:rgba(255,255,255,1);line-height:30rpx;'>{{voice.time.min}}:{{voice.time.sec}}</text>
+        </movable-view>
+      </movable-area>
+      <progress stroke-width='4' backgroundColor='#fff' activeColor='rgb(68,164,244)' percent='{{voice.progress}}'></progress>
+    </view>
+    <view style='width:100rpx;height:100rpx;background:rgb(68,164,244);box-shadow:0px 5px 15px 0px rgba(35,69,156,0.2);display:flex;align-items:center;justify-content:center' bindtap='voiceClick'>
+      <image src="../../images/{{voice.playing?'pause.png':'play.png'}}" style='width:48rpx;height:48rpx;'></image>
+    </view>
+  </view>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{paperTotalNum !== 0}}"  class="cu-bar-float">
+  <view class='cu-bar input'>
+   <view class='action'  bindtap='openLuyin'>
+    <text class='icon-sound text-grey' style="color:{{ !isOpen? '#8799a3':'#64A9EC'}};"></text>
+  </view>
+  <input class='solid-bottom' value='{{activeN}}'  bindinput="bindKeyInput"  focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <view class='action'>
+     <button class='cu-btn bg-cyan shadow' bindtap='sendWT'>发送</button>
+  </view>
+  <!-- <button class='cu-btn bg-cyan shadow' bindtap='nextWT'>{{question !== 2 ? "下一题":"提交并返回"}}</button>  -->
+  <button class='cu-btn bg-cyan shadow' bindtap='nextWT'>{{paperTotalNum == question ? "提交":"下一题"}}</button> 
+  </view>
+  <view wx:if="{{isOpen}}" class='anzhu-btn'>
+      <image src='../../images/anzhebudong2.png'  bindtouchstart="touchdown" bindtouchend="touchup"></image>
+      <view class='anzhuluyin' >按住录音</view>
+  </view>
+  <!-- <view class='action'  bindtap='openLuyin'>
+    <text class='icon-sound text-grey' style="color:{{ !isOpen? '#8799a3':'#64A9EC'}};"></text>
+  </view>
+  <input class='solid-bottom' value='{{activeN}}'  bindinput="bindKeyInput"  focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <view class='action'>
+     <button class='cu-btn bg-cyan shadow' bindtap='sendWT'>发送</button>
+  </view>
+  <button class='cu-btn bg-cyan shadow' bindtap='nextWT'>下一题</button> -->
+    <!-- <view class='anzhuluyin' wx:if="{{isOpen}}"  bindtouchstart="touchdown" bindtouchend="touchup">按住录音</view> -->
+</view>
+<view  wx:if="{{paperTotalNum === 0}}" style='text-align:center;height:300rpx;line-height:300rpx;'>
+无数据
+</view>
+
+
+<view  wx:if="{{isSpeaking}}"  class="speak-style">
+   <view class='speak-style-lim'>
+    <image class="sound-style" src="../../images/voice_icon_speech_sound_1.png" ></image>
+    <image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png" ></image>
+    <image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png" ></image>
+    <image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png" ></image>
+    <image wx:if="{{j==5}}"class="sound-style" src="../../images/voice_icon_speech_sound_5.png" ></image>   
+      </view>
+ </view>

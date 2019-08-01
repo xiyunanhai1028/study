@@ -1,0 +1,82 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logOrRegister/logOrRegister",
+    "pages/SignIn/SignIn",
+    "pages/register/register",
+    "pages/personalInfor1/personalInfor1",
+    "pages/personalInfor2/personalInfor2",
+    "pages/homePage/homePage",
+    "pages/videoDetails/videoDetails",
+    "pages/freeCourse/freeCourse",
+    "pages/microClassroom/microClassroom",
+    "pages/eventCompetition/eventCompetition",
+    "pages/vip/vip",
+    "pages/openingVIP/openingVIP",
+    "pages/offlineAddress/offlineAddress",
+    "pages/Practice/Practice",
+    "pages/Exercises/Exercises",
+    "pages/subResults/subResults",
+    "pages/analysis/analysis",
+    "pages/quAndAns/quAndAns",
+    "pages/quAndAnswers/quAndAnswers",
+    "pages/personalCenter/personalCenter",
+    "pages/purchaseRecord/purchaseRecord",
+    "pages/watchingHistory/watchingHistory",
+    "pages/Corrected/Corrected",
+    "pages/answeringHistory/answeringHistory",
+    "pages/answeringHistory1/answeringHistory1",
+    "pages/OtherAnswers/OtherAnswers",
+    "pages/History/History",
+    "pages/personalInfor3/personalInfor3",
+    "pages/personalInfor4/personalInfor4",
+    "pages/biAndMian/biAndMian",
+    "pages/vipVideo/vipVideo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ColorUI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#0081ff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath": "/images/shouy.png",
+        "selectedIconPath": "/images/shouyd.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "iconPath": "/images/vip.png",
+        "selectedIconPath": "/images/vipd.png",
+        "text": "VIP"
+      },
+      {
+        "pagePath": "pages/Practice/Practice",
+        "iconPath": "/images/lianxi.png",
+        "selectedIconPath": "/images/lianxid.png",
+        "text": "练习"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "iconPath": "/images/wode.png",
+        "selectedIconPath": "/images/woded.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.0.6",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

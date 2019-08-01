@@ -1,0 +1,32 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">答案解析（问答题）</view>
+    </navigator>
+  </view>
+</view>
+<view class="container">
+  <scroll-view scroll-y>
+    <view class='answer-box' wx:for="{{answersArr}}" wx:for-index="index">
+      <view class='subject'>{{item.question}}</view>
+
+      <view class='self-answer-box'>
+        <view class='title'>自己答案：</view>
+        <view class='self-answer'>答：{{item.userReply}}</view>
+      </view>
+
+      <view class='standard-answer-box'>
+         <view class='title'>标准答案：</view>
+        <view class='standard-answer'>答：{{item.rightReply}}</view>
+      </view>
+      
+      <view class='other-answer-box'>
+        <view class='title'>其他学员答案：</view>
+        <view class='other-answers' wx:for="{{item.otherReplyList}}" wx:for-index="idx" wx:for-item="otherItem">
+           <view class='other-answer'>答：{{otherItem}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

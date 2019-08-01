@@ -1,0 +1,31 @@
+<!--pages/register/register.wxml-->
+<view class='register'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">选择职业属性</view>
+    </navigator>
+  </view>
+</view>
+<view class='personalInfor-bottom'>
+  <view class='personalInfor-title'>
+    <view class='personalInfor-p1'>
+    完善个人信息我们将提供针
+    </view>   
+    <view class='personalInfor-p1'>
+    对性服务和新人课程包 
+    </view> 
+    <view class='personalInfor-ab'>
+     1/2
+    </view>           
+  </view>
+  <view class='personalInfor-ul'>
+   <view class='{{item.id%2 === 0 ? "personalInfor-l" : "personalInfor-r"}}' wx:for="{{personData}}">
+    <image src='../../images/{{item.id}}.png'></image>
+    <view class='roleName' bindtap='goPage' data-data='{{item}}'>{{item.roleName}}</view>
+   </view>     
+  </view>
+</view>
+</view>
+

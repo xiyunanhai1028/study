@@ -1,0 +1,32 @@
+page{
+  background: white;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+
+.answer-box{
+  font: 32rpx "微软雅黑";
+  color: #333333;
+  
+}
+
+.subject{
+  color: #4C86BE;
+  font-size: 36rpx;
+}
+
+.self-answer-box,.standard-answer-box,.other-answer-box{
+  margin-top: 20rpx;
+}
+.title{
+  color: #4C86BE;
+  margin-left: 20rpx;
+}
+.self-answer,.standard-answer,.other-answer{
+  margin: 40rpx;
+}

@@ -1,0 +1,219 @@
+/* pages/videoDetails/videoDetails.wxss */
+.videoDetails {
+  padding-bottom: 100rpx;
+}
+page {
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+}
+.video video {
+  width:100%;
+  height:350rpx;
+}
+.fixed {
+width:750rpx;
+height:98rpx;
+background:rgba(255,255,255,1);
+box-shadow:-4px 1px 6px 1px rgba(37,37,37,0.19);
+position: fixed;
+bottom: 0px;
+left: 0px;
+}
+.vip-b-z-image {
+  width: 54rpx;
+  height: 34rpx;
+  vertical-align: sub;
+}
+.vip-b-z-top {
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  font-size:28rpx;
+  color:rgba(51,51,51,1);
+  line-height:50rpx;  
+  background: #fff;
+}
+.vip-x-q {
+  margin-bottom: 118rpx;
+}
+.vip-b-z-xx {
+  padding: 0px 30rpx 30rpx 30rpx;
+  font-size:24rpx;
+  color:rgba(102,102,102,1);
+  line-height:50rpx;
+  border-bottom:2rpx solid rgba(220,220,220,0.4);
+    background: #fff;
+}
+.vip-b-t {
+    border-bottom:2rpx solid rgba(220,220,220,0.4);
+    font-size:33rpx;
+    color:rgba(102,102,102,1);
+    line-height:150rpx;  
+    /* opacity:0.4; */
+    height: 150rpx;  
+    padding: 0 30rpx;
+    background: #fff;
+}
+.vip-y-j {
+  border-bottom:2rpx solid rgba(220,220,220,0.4);
+  font-size:25rpx;
+  color:rgba(102,102,102,1);
+  line-height:50rpx;  
+  padding: 30rpx 0rpx;
+  background: #fff;
+}
+.vip-y-j image{
+  width: 66rpx;
+  height: 36rpx;
+  padding-left: 30rpx;
+  padding-right: 10rpx;
+  vertical-align: sub;
+}
+.f-x-image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.f-x-l {
+  height: 98rpx;
+  font-size:25rpx;
+  color:rgba(51,51,51,1);
+  padding-top:10rpx;
+  position: relative
+}
+.f-x-l view {
+  padding-top:10rpx;
+}
+.btn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+button[plain] {
+  border: 0;
+} 
+.g-m-vip {
+  background:  rgb(73, 171, 252);
+  width: 260rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  font-size:33rpx;
+  color:rgba(255,255,255,1);
+}
+.g-m-vip-f {
+  overflow: hidden;
+}
+.g-m-vip {
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 16rpx;
+}
+.k-c-j-j {
+  background: #fff;
+  margin-top: 30rpx;
+  padding: 40rpx 20rpx 30rpx 20rpx;
+}
+.k-c-j-j-title {
+  font-size:33rpx;
+  color:rgba(51,51,51,1);
+}
+.k-c-x-z {
+  border:3px solid rgba(238,238,238,0.4);  
+  padding: 30rpx;
+  margin-top: 30rpx;
+}
+.k-c-x-z-title{
+text-align: center;
+font-size:33rpx;
+color:rgba(51,51,51,1);
+line-height:67rpx;  
+}
+.k-c-x-z-li {
+font-size:25rpx;
+color:rgba(51,51,51,1);
+line-height: 40rpx;
+}
+
+.vip-mulu {
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+.mulu-title {
+  font-size:32rpx;
+  color:rgba(51,51,51,1);
+  line-height:58rpx; 
+  padding: 30rpx; 
+}
+.mulu-shuo-m {
+  font-size:25rpx;
+  color:rgba(51,51,51,1);
+  line-height:58rpx; 
+  padding: 0px 30rpx 30rpx 30rpx; 
+}
+.mulu-can-s {
+  width:690rpx;
+  /* height:228rpx; */
+  background:rgba(249,249,249,1);
+  border-radius:20rpx;
+  margin: 0 auto; 
+  padding: 30rpx; 
+}
+.mulu-can-1,.mulu-can-2 {
+  font-size:25rpx;
+  color:rgba(51,51,51,1);
+  line-height:58rpx; 
+}
+.mulu-li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gray-radio-l{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  border: 2rpx solid;
+  margin-right: 10rpx;
+}
+.radio-l{
+  background: rgb(73, 171, 252);
+}
+.mulu-li image {
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: middle;
+  /* padding-right: 10rpx; */
+}
+.mulu-jcjj {
+  padding: 0px 30rpx;
+}
+.mulu-jcjj-title{
+  font-size:33rpx;
+  color:rgba(51,51,51,1);
+  line-height:107rpx;
+}
+.mulu-li-title,.mulu-li{
+  font-size:28rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  line-height:67rpx; 
+
+}
+.mulu-li{
+  padding-left: 60rpx; 
+}
+
+.courseData-jianjie{
+font-size:25rpx;
+color:rgba(51,51,51,1);
+line-height:40rpx;
+padding: 30rpx;
+}
+.no-video {
+ width:100%;
+ height:350rpx;
+}
+.no-video image {
+ width:100%;
+ height:350rpx;
+}

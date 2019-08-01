@@ -1,0 +1,30 @@
+/* pages/openingVIP/openingVIP.wxss */
+.cu-btn {
+  width: 321rpx;
+  height: 74rpx;
+}
+
+.grid {
+  background: #fff;
+  padding: 30rpx;
+}
+
+.q-r-z-f-btn{
+  width: 600rpx;
+  height: 80rpx;
+  background: rgb(73, 171, 242);
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  margin: 0 auto;
+}
+
+.sect-t-c {
+  font-size:24rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(102,102,102,1);
+  line-height:80rpx;  
+  background-color: #fff;
+  padding-left: 30rpx;
+}

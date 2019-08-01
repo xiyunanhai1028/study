@@ -1,0 +1,57 @@
+/* pages/personalInfor1/personalInfor1.wxss */
+page {
+  height: 100%;
+  background: #fff;
+}
+
+.personalInfor-bottom {
+  padding: 30rpx;
+}
+.personalInfor-p1 {
+font-size:28rpx;
+font-family:SourceHanSansCN-Regular;
+font-weight:400;
+color:rgba(51,51,51,1);
+line-height:58rpx;   
+ }
+ .personalInfor-title {
+   position: relative;
+ }
+ .personalInfor-ab {
+   position: absolute;
+  font-size:50rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:58rpx;   
+  right: 30rpx;
+  top: 10rpx;
+ }
+.personalInfor-ul {
+  overflow: hidden;
+}
+.personalInfor-l,.personalInfor-r, .personalInfor-l image , .personalInfor-r image {
+  width: 318rpx;
+  height: 224rpx;
+}
+.personalInfor-l {
+  float: left;
+  margin-top: 50rpx;
+  position: relative;
+}
+.personalInfor-r {
+  float: right;
+  margin-top: 50rpx;
+  position: relative;
+}
+.roleName{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 224rpx;
+  font-size:28rpx;
+  color: #fff;
+  top: 0;
+  left: 0;
+}

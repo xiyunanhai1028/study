@@ -1,0 +1,33 @@
+/* pages/eventCompetition/eventCompetition.wxss */
+page,.eventCompetition {
+  background: #fff;
+  height: 100%;
+}
+.huo-d {
+  background: #fff;
+}
+
+.huo-d-title {
+  text-align: center;
+  font-size:32rpx;
+  color:rgba(51,51,51,1);
+  line-height:100rpx;  
+}
+.huo-d-btn {
+  background-color: rgb(73, 171, 242);
+  width: 260rpx;
+  height: 66rpx;
+  color: #fff;
+  line-height: 66rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.huo-d-g-z {
+  background:rgba(210,210,210,0.4);
+  padding: 30rpx;
+  margin-top: 30rpx;
+  font-size:28rpx;
+  color:rgba(102,102,102);
+  line-height:48rpx;
+}

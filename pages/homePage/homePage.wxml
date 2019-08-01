@@ -1,0 +1,61 @@
+<view>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <!-- <navigator class='action' open-type="navigateBack" delta="1" hover-class="none"> -->
+      <!-- <text class='icon-back'></text> -->
+      <view class="content">首页</view>
+    <!-- </navigator> -->
+  </view>
+</view>
+ <view class='bg-white padding-l-r'>
+   <view class='grid col-1 margin-bottom text-center'>
+  <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{bannerImgList}}" wx:key>
+      <image src="https://wq.juren5280.com/eduOnline/{{item}}" mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>   
+   </view> 
+ </view>
+  <view class='bg-white padding-l-r kecheng-dh'>
+   <view class='grid col-4 margin-bottom text-center'>
+     <view class='' data-page="../../pages/freeCourse/freeCourse" bindtap='gpPage'>
+       <image class='' src='../../images/mianfeike.png'></image>
+       <view>免费课</view>
+     </view>
+     <view class='' data-page='../../pages/microClassroom/microClassroom' bindtap='gpPage'>
+       <image src='../../images/weiketang.png'></image>
+       <view>微课堂</view>
+     </view>
+     <view class=''  bindtap='gopageTab' data-page='../../pages/vip/vip'>
+       <image src='../../images/vipzhuanqu.png'></image>
+       <view>VIP专区</view>
+     </view>
+     <view class=''  bindtap='gopageTab' data-page='../../pages/Practice/Practice'>
+       <image src='../../images/monilianxi.png'></image>
+       <view>模拟练习</view>
+     </view>               
+   </view> 
+ </view>  
+ <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  {{item.name}}
+  </view>
+</scroll-view> 
+<view class='scroll-view-list bg-white'>
+  <view wx:for="{{courseList}}" class='scroll-view-li flex p-xs margin-bottom-sm mb-sm'  data-page="../../pages/videoDetails/videoDetails" data-id="{{item.id}}" bindtap='gpPage'>
+  <view class='flex-sub padding-sm margin-xs radius'>
+       <image class='shipin' src='https://wq.juren5280.com/eduOnline{{item.courseImg}}'></image>
+       <view class='bofang-fd'>
+       <image class='bofang' src='../../images/shipinbofang.png'></image>
+       </view>
+  </view>
+     <view class='flex-twice  padding-sm margin-xs radius'>
+       <view> {{item.courseName}}           
+       </view>
+       <view class='time'>
+          {{item.courseTime}}小时
+       </view>
+     </view>
+  </view>
+</view>
+</view>

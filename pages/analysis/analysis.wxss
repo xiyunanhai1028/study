@@ -1,0 +1,24 @@
+/* pages/analysis/analysis.wxss */
+.analysis {
+  background: #fff;
+  padding-bottom: 30rpx;
+}
+.analysis-li {
+  padding: 30rpx;
+  border-bottom: 1px solid rgba(220,220,220,1);
+}
+.analysis-p {
+  font-size:32rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(76,134,190,1);
+  line-height:50rpx;
+}
+.analysis-jx {
+  font-size:28rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:50rpx; 
+  padding-top: 30rpx; 
+}

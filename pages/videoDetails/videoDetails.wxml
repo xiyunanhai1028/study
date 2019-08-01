@@ -1,0 +1,93 @@
+<!--pages/videoDetails/videoDetails.wxml-->
+<view class='videoDetails'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">详情</view>
+    </navigator>
+  </view>
+</view>
+<view class='video'>
+  <!-- <video wx:if="{{userData.vipFlag === 1 || userData.vipFlag === 3}}"  src='https://www.shuoloveting.com/eduOnline/{{courseData.courseMediaUrl}}' direction='90' bindended='videoEnd'></video> -->
+  <video wx:if="{{vipFlag || courseData.courseType==0 ||courseData.courseType==2}}"  src='{{src}}' direction='90'  bindended='videoEnd' autoplay poster='https://wq.juren5280.com/eduOnline{{courseData.courseImg}}' enable-play-gesture></video>
+  <view bindtap='isOpenVipED' wx:if="{{!vipFlag&&courseData.courseType==1}}" class='no-video'>
+     <image src='https://wq.juren5280.com/eduOnline{{courseData.courseImg}}'></image>
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white nav text-center">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{2}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    {{navList[index]}}
+  </view>
+</scroll-view>
+<view class='vip-x-q' wx:if="{{TabCur === 0}}">
+ <view class='vip-b-z-top'>
+ <image class='vip-b-z-image' src='../../images/vipbiaozhi.png' wx:if="{{courseData.courseType==1}}"></image>
+  {{courseData.courseName}}
+ </view>
+ <view class='vip-b-z-xx'>总时长{{courseData.courseTime}}小时        已完结（共{{videoSrcArr.length}}节）</view> 
+ <!-- <view class='vip-b-t'>
+ VIP免费学习
+ </view>     -->
+ <view class='vip-y-j'>
+ <!-- {{courseData.courseTag}} -->
+   <image src='../../images/mzgx.png'></image> 每周更新  <image src='../../images/yjyx.png'></image>永久有效
+ </view> 
+ <view class='k-c-j-j'>
+   <view class='k-c-j-j-title'>课程简介</view>
+   <view class='courseData-jianjie'>
+   {{courseData.courseDetail}}
+   </view>
+   <view class='k-c-x-z'>
+      <view class='k-c-x-z-title'>课程须知</view>
+      <view class='k-c-x-z-li'>{{courseData.courseNote}}</view>
+   </view>
+ </view>                            
+</view>
+<view class='vip-mulu' wx:if="{{TabCur ===1}}">
+  <view class='mulu-title'>{{courseData.courseName}}
+</view>
+   <!-- <view class='mulu-shuo-m'>从基础语法到完整项目，一套课程掌握vue基础知识点</view> -->
+   <view class='mulu-can-s'>
+     <view class='mulu-can-1'>视频级别：{{courseData.courseLevel}}</view>
+     <view class='mulu-can-2'>视频时长：{{courseData.courseTime}}小时</view>
+   </view>
+   <!-- <view class='mulu-jcjj'>
+     <view class='mulu-jcjj-title'>课程目录</view>
+     <view class='mulu-list'>
+       <view class='mulu-list-li' wx:for="{{courseData.courseCategory}}" wx:for-index="index1">
+        <view class='mulu-li-title'>{{item.dirName}}</view>
+        <view class='mulu-li' wx:for="{{item.dirTreeList}}" wx:for-index="index2">
+          <view bindtap='itemHandler' data-index1='{{index1}}' data-index2='{{index2}}'><image src='../../images/shipinbf.png'></image>{{item.dirName}}</view>
+        </view>       
+       </view>
+     </view>
+   </view> -->
+    <view class='mulu-jcjj'>
+     <view class='mulu-jcjj-title'>课程目录</view>
+     <view class='mulu-list'>
+       <view class='mulu-list-li' wx:for="{{courseData.courseCategory}}" wx:for-index="index">
+        <view class='mulu-li'>
+          <view  class="gray-radio-l {{chcekedArr[index] ? 'radio-l' : ''}}"></view>
+          <view class='mulu-li-title' bindtap='itemHandler' data-index='{{index}}'>{{item.dirDetail}}</view>
+        </view>
+        <!-- <view class='mulu-li' wx:for="{{item.dirTreeList}}" wx:for-index="index2">
+          <view  class="radio-l" wx:if="{{chcekedArr[index1][index2]}}"></view><view  class="gray-radio-l" wx:else></view><view bindtap='itemHandler' data-index1='{{index1}}' data-index2='{{index2}}'>{{item.dirName}}</view>
+        </view>        -->
+       </view>
+     </view>
+   </view>
+</view>
+<view class='fixed'>
+  <view class='grid col-2 margin-bottom text-center'>
+    <view class='f-x-l'>
+       <image class='f-x-image' src='../../images/fenxiang.png'></image>
+       <view>分享</view>
+       <button class='btn' plain open-type='share' hover-class="none"></button>
+    </view>
+    <view class='g-m-vip-f'>
+      <view class='g-m-vip'  wx:if="{{courseData.courseType === 1 && !isVip}}"  data-page="../../pages/openingVIP/openingVIP" bindtap='gpPage'>购买VIP</view>
+    </view>
+  </view>
+</view>
+</view>

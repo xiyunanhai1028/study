@@ -1,0 +1,36 @@
+<!--pages/eventCompetition/eventCompetition.wxml-->
+<view class='eventCompetition'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">活动比赛</view>
+    </navigator>
+  </view>
+</view>
+<view class='huo-d'>
+  <view class='huo-d-top'>
+    <view class='huo-d-title'>2019***大赛正在举行中（第三季）</view>
+    <view class='huo-d-title'>已经有580人报名</view>
+    <view class='huo-d-title'>报名日期：20192月25日 09:00-11:00</view>
+    <view class='huo-d-btn'>报名</view>
+  </view>
+  <view class='huo-d-g-z'>
+     <view class='huo-d-g-z-title'>比赛说明：</view>
+     <view class='huo-d-g-z-li'>
+1. 活动时间：2018年1月25日—2018年2月9日（在活动时
+间内，活动资源送完则活动自动结束）； 
+2. 参与方式：在“浙江移动”微信公众号中回复“福袋”
+关键字； 
+3. 活动规则：用户在活动期间参与活动，可通过本人参与
+、受邀、邀请好友三种方式参与活动，每个手机号累计最
+多获得11个福袋。 
+（1）首次发起邀请成功，无论对方是否接受邀请，发起
+人均可获得1个福袋。 
+（2）每次被邀请人接受邀请，发起人和被邀请人双方各
+自可获得1个福袋。双方可互相邀请，均可以发起……
+     
+     </view>
+  </view>
+</view>
+</view>

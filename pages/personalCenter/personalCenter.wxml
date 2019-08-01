@@ -1,0 +1,30 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <!-- <navigator class='action' open-type="navigateBack" delta="1" hover-class="none"> -->
+      <!-- <text class='icon-back'></text> -->
+      <view class="content">我的</view>
+    <!-- </navigator> -->
+  </view>
+</view>
+<view class='center'>
+  <view class='geren-zhong-xin'> 
+  <image class='geren-zhong-xin-image' src='../../images/gerenzhongxin.png'></image> 
+  <view class='center-float'>
+     <image class='center-float-image' src='../../images/xianshangvip.png'></image> 
+     <view class='center-float-l'>{{userData}}</view>
+  </view>
+  </view>
+  <view class='muem-li' data-page="../../pages/purchaseRecord/purchaseRecord" bindtap='gpPage'>
+    <image src="../../images/gmjc.png"></image>
+    <view>购买记录</view>
+    </view>
+  <view class='muem-li' data-page="../../pages/watchingHistory/watchingHistory" bindtap='gpPage'>
+    <image src="../../images/gkls.png"></image>
+    <view>观看历史</view>
+    </view>
+  <!-- <view class='muem-li' data-page="../../pages/Corrected/Corrected" bindtap='gpPage'>
+    <image src="../../images/ypgzy.png"></image>
+    <view>已批改作业</view>
+    </view>         -->
+</view>

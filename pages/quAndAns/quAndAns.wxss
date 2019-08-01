@@ -1,0 +1,206 @@
+/* pages/quAndAns/quAndAns.wxss */
+page{
+  background: #fff;
+}
+.zn-lx{
+  padding: 30rpx;
+}
+.zn-lx-1 {
+  overflow: hidden;
+  padding-top: 30rpx;
+}
+.zn-lx-1-p {
+  font-size:25rpx;
+  font-family:Adobe Heiti Std R;
+  font-weight:normal;
+  color:rgba(102,102,102,1);
+  line-height: 42rpx;
+  float: left;
+}
+.zn-lx-1-l {
+  float: right;
+}
+.quAndAns {
+  padding: 30rpx;
+  /* padding-top: 0px; */
+  }
+.zn-lx-2-t {
+  font-size:32rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:42rpx; 
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.ans {
+  font-size:32rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:50rpx;  
+}
+audio {
+  width: 100%;
+  margin-top: 100rpx;
+  display: inline-block;
+  overflow: hidden;
+}
+
+
+
+.rowCenter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.movable-area {
+  width: 100%;
+  height: 34rpx;
+  position: absolute;
+  bottom: -10rpx;
+  left: 0;
+
+}
+
+.movable-view {
+  width: 92rpx;
+  height: 34rpx;
+  background: rgb(68,164,244);
+  box-shadow: 0px 10rpx 30rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius: 18rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.voice {
+  margin-top: 66rpx;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.voice view {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  color: #4a4a4a;
+  align-items: center;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.voice view image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+
+.voice progress {
+  width: 100%;
+}
+
+
+
+
+/**index.wxss**/
+.speak-style{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    border-radius: 20rpx;
+    margin: 50% auto;
+    /* background: #fff; */
+    /* opacity: 0; */
+    top: 0px;
+    left: 0px;
+     
+}
+.speak-style-lim {
+    height: 270rpx;
+    width: 240rpx;
+    border-radius: 20rpx;
+    margin: 10% auto;
+    background: black;  
+    opacity: 0.7;
+}
+.item-style{
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.text-style{
+    text-align: center;
+
+}
+.record-style{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 120rpx;
+    width: 100%;
+}
+.btn-style{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+
+.sound-style{
+  position: absolute;
+  width: 74rpx;
+  height:150rpx;
+  margin-top: 45rpx;
+  margin-left: 83rpx;
+}
+
+
+.board {
+  overflow: hidden;
+  border-bottom: 2rpx solid #26A5FF;  
+}
+/*列布局*/
+.cell{
+    display: flex;
+    margin: 20rpx;
+}
+.cell-hd{
+    margin-left: 10rpx;
+    color: #885A38;
+}
+.cell .cell-bd{
+    flex:1;
+    position: relative;
+   
+}
+/**只显示一行*/
+.date{
+    font-size: 30rpx;
+    text-overflow: ellipsis; 
+    white-space:nowrap;
+    overflow:hidden; 
+}
+.cu-bar-float {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.anzhu-btn{
+  text-align: center;
+  padding: 60rpx;
+}
+.anzhu-btn image {
+  width: 120rpx;
+  height: 120rpx;
+}

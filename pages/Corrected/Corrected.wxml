@@ -1,0 +1,20 @@
+<!--pages/Practice/Practice.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">已批改作业</view>
+    </navigator>
+  </view>
+</view>
+  <view class='view-list'>
+    <view class='view-li' wx:for="{{PaperList}}" data-id='{{item.id}}' data-page='{{item.paperType === 1 ? "../../pages/answeringHistory/answeringHistory":"../../pages/answeringHistory1/answeringHistory1"}}' bindtap='gpPage'>
+      <image class='shu' src='../../images/shu.png'></image>
+      <view class='view-li-r'>{{item.paperName}}</view>
+    </view>
+    <view class='view-li'  data-page='../../pages/answeringHistory1/answeringHistory1' bindtap='gpPage'>
+      <image class='shu' src='../../images/shu.png'></image>
+      <view class='view-li-r'>2019年国家公务员录用考试《行测》真题（副省级
+网友回忆版）</view>
+    </view>    
+  </view>

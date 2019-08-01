@@ -1,0 +1,21 @@
+<!--pages/subResults/subResults.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">个人成绩</view>
+    </navigator>
+  </view>
+</view>
+<view class='sub'>
+  <view class='sub-header'>
+    <view>练习类型：快速智能练习</view>
+    <view>交卷时间：{{rustData.endTime}}</view>
+  </view>
+  <view class='cu-list grid col-5 no-border'>
+    <view wx:for="{{rustData.reply}}" class='cu-item'  wx:for-key="index">
+      <view class='item' style='{{item.isRight==0?"background:rgba(224, 90, 80, 1);":"background:rgba(100,169,236,1)"}}'>{{index + 1}}</view>
+    </view>
+  </view>
+</view>
+<view class='sub-qmjx' bindtap='gpPage'>全面解析</view>

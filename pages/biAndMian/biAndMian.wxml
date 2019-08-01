@@ -1,0 +1,21 @@
+
+<!--pages/Practice/Practice.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">快速智能练习</view>
+    </navigator>
+  </view>
+</view>
+<view>
+<view class='wen-title'>
+快速智能练习
+</view>
+<view class='wen-ben'>
+                            根据你对考点的掌握情况快速智能出题
+                        </view>
+<view class='wen-ben'>提升综合能力，赶快练起来吧</view>     
+<view class='anniu-btn' data-page='../../pages/Exercises/Exercises' data-type='0' bindtap='gpPage'>单选题</view>   
+<view class='anniu-btn' data-page='../../pages/quAndAns/quAndAns' data-type='1' bindtap='gpPage'>问答题</view>                
+</view>

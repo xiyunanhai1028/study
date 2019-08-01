@@ -1,0 +1,38 @@
+<!--pages/Practice/Practice.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <!-- <navigator class='action' open-type="navigateBack" delta="1" hover-class="none"> -->
+      <!-- <text class='icon-back'></text> -->
+      <view class="content">练习</view>
+    <!-- </navigator> -->
+  </view>
+</view>
+<view class='scroll-view'>
+ <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabList}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  {{tabList[index].name}}
+  </view>
+</scroll-view> 
+  <view class='posi-ab' data-page='../../pages/personalInfor3/personalInfor3' bindtap='gpPage'>
+    <image class='shipin' src='../../images/tianjia.png'></image>
+  </view>
+</view>
+<view class='weiketang'>
+  <view class='grid col-3 margin-bottom text-center'>
+    <view class='weiketang-btn'> 
+    <button class="cu-btn {{index==1? 'bg-cyan' : ''}}" data-index='1' bindtap='goPage'>历年真题</button>
+    </view>
+    <view class='weiketang-btn'> 
+    <button class="cu-btn {{index==2? 'bg-cyan' : ''}}" data-index='2' bindtap='goPage'>作业</button>
+    </view>
+    <view class='weiketang-btn'>
+     <button class="cu-btn {{index==3? 'bg-cyan' : ''}}" data-index='3' data-page="../../pages/History/History" bindtap='goPage'>作答历史</button>
+    </view>
+  </view>
+  </view>
+  <view class='view-list'>
+    <view class='view-li' wx:for="{{PaperList}}" data-id='{{item.id}}' bindtap='itemHandler'>
+      <image class='shu' src='../../images/shu.png'></image>
+      <view class='view-li-r'>{{item.paperName}}</view>
+    </view>
+  </view>

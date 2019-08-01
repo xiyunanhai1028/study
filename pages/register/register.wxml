@@ -1,0 +1,30 @@
+<!--pages/register/register.wxml-->
+<view class='register'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <text>注册</text>
+    </navigator>
+  </view>
+</view>
+<view class='login-bottom'>
+  <view class='login-input'>
+    <input id='mobile' bindinput="mobileInput" placeholder-class="placeholder"  type="number" placeholder="请输入手机号" />
+  </view>
+  <view class='login-input'>
+    <input id='verifyCode'  bindinput="mobileInput" style='width:60%;' placeholder-class="placeholder" bindfocus="bindfocus" type="number" placeholder="请输入验证码" />
+    <button class='cu-btn bg-cyan login-input-ab'  bindtap='verificateCode' disabled="{{isHq}}">{{text}}</button>
+  </view>
+  <view class='login-input'>
+    <input bindblur="mobileInput" password id='password'  bindinput="mobileInput" placeholder-class="placeholder" bindfocus="bindfocus" type="text" placeholder="请输入密码"/>
+  </view> 
+  <view class='passow-ts'>
+请设置6位数以上包含数字，字母和特殊符号中至少两种
+组合的密码
+</view>
+    <view class='denglu'>
+    <button class='cu-btn bg-cyan margin-tb-sm lg' bindtap='gpPage'>立即注册</button>
+    </view>     
+</view>
+</view>

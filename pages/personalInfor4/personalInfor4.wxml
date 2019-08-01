@@ -1,0 +1,39 @@
+<!--pages/register/register.wxml-->
+<view class='register'>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">选择专业兴趣</view>
+    </navigator>
+  </view>
+</view>
+<view class='personalInfor-bottom'>
+  <view class='personalInfor-title'>
+    <view class='personalInfor-p1'>
+    选择你感兴趣的专业
+    </view>   
+    <!-- <view class='personalInfor-p1'>
+    对性服务和新人课程包 
+    </view>  -->
+    <view class='personalInfor-ab'>
+     2/2
+    </view>           
+  </view>
+  <view class='personalInfor-ul'>
+  <checkbox-group bindchange="checkboxChange">
+   <view class='{{index%2 === 0 ? "personalInfor-l" : "personalInfor-r"}}' wx:for="{{personData}}">
+    <image src='../../images/{{item.id}}.png'></image>
+    <view class='roleName' data-data='{{item}}'>{{item.majorName}}
+    <checkbox class='float-l' color=" color: #64A9EC;" value="{{item.id}}"></checkbox>
+    </view>
+   </view>
+   </checkbox-group>
+  </view>
+</view>
+    <view class='denglu'>
+    <button class='cu-btn bg-cyan margin-tb-sm lg' bindtap='goPage'>确认选择并返回</button>
+    </view>  
+</view>
+
+

@@ -1,0 +1,32 @@
+<view>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">VIP视频</view>
+    </navigator>
+  </view>
+</view>
+<view class='weiketang'>
+  <!-- <view class='grid col-2 margin-bottom text-center'>
+    <view class='weiketang-btn'> 
+    <button class='cu-btn'>微课堂</button>
+    </view>
+    <view class='weiketang-btn'>
+     <button class='cu-btn' data-page="../../pages/eventCompetition/eventCompetition" bindtap='gpPage'>活动比赛</button>
+    </view>
+  </view> -->
+  <view class='weiketang-list grid col-2 margin-bottom text-center'>
+    <view class='weiketang-li' wx:for="{{courseList}}" data-id="{{item.id}}"  data-page="../../pages/videoDetails/videoDetails" bindtap='gpPage'> 
+      <view class='weiketang-li-top'>
+        <image class='shipin' src='https://wq.juren5280.com/eduOnline{{item.courseImg}}'></image>
+        <view class='bofang-fd'>
+        <image class='bofang' src='../../images/shipinbofang.png'></image>
+        </view>      
+      </view>
+      <view class='weiketang-li-bottom'>{{item.courseName}} </view>
+      <view class='weiketang-li-time'>{{item.courseTime}}小时</view>
+    </view>
+  </view>
+</view>
+</view>

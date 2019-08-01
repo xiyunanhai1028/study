@@ -1,0 +1,36 @@
+<!--pages/Exercises/Exercises.wxml-->
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-white" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text>
+      <view class="content">纠错</view>
+    </navigator>
+  </view>
+</view>
+<view class='zn-lx'>
+<view class='zn-lx-1'>
+<view class='zn-lx-1-p'>快速智能练习</view>
+<view class='zn-lx-1-l'>{{question}}/15</view>
+</view>
+<view class='zn-lx-2'>
+  <view class='zn-lx-2-t'>(单选题）{{courseData.questionContent}}：</view>
+  <view class='zn-lx-2-ul'>
+  <view class='zhen-q-da-2'>
+                            答“坚持依法，自愿，有偿的基本原则。鼓励农
+户依法采取转包，出租，互换等
+                        </view>  
+  </view>
+</view>
+<view class='zhen-q-da'>
+  <view class='zhen-q-da-1'>标准答案：</view>
+  <view class='zhen-q-da-2'>
+                            答“坚持依法，自愿，有偿的基本原则。鼓励农
+户依法采取转包，出租，互换等
+                        </view>
+</view>
+<view class="qi-te" bindtap='goPage'>其他学员答案</view>
+  <view class='xia-yi-ti' bindtap='gpPage'>{{question !== 15 ? "下一题" : "提交并生成答案"}}</view>
+  <!-- <view class='xia-yi-ti' wx:if="{{question === 15}}" bindtap='sunDaan'>提交答案</view> -->
+</view>
+
+

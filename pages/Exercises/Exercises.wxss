@@ -1,0 +1,71 @@
+/* pages/Exercises/Exercises.wxss */
+page {
+  background-color: #fff;
+}
+.zn-lx{
+  padding: 30rpx;
+}
+.zn-lx-1 {
+  overflow: hidden;
+  padding-top: 30rpx;
+}
+.zn-lx-1-p {
+  font-size:25rpx;
+  font-family:Adobe Heiti Std R;
+  font-weight:normal;
+  color:rgba(102,102,102,1);
+  line-height: 42rpx;
+  float: left;
+}
+.zn-lx-1-l {
+  float: right;
+}
+.zn-lx-2-t {
+  font-size:32rpx;
+  font-family:SourceHanSansCN-Regular;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+  line-height:42rpx; 
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.zn-lx-2-li {
+  overflow: hidden;
+  padding-bottom: 40rpx;
+}
+.zn-lx-2-l {
+  float: left;
+  width: 80rpx;
+}
+.zn-lx-2-r {
+  float: right;
+  width: 610rpx;
+  font-size:32rpx;
+  line-height: 54rpx;
+}
+
+.zn-lx-2-x {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 100%;
+  border: 1rpx solid rgb(68,164,244);
+  line-height: 54rpx;
+  text-align: center;
+  font-size:32rpx;
+  color: rgb(68,164,244);
+}       
+
+.xia-yi-ti {
+  width: 600rpx;
+  margin: 0 auto;
+  height: 80rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 80rpx;
+  background: rgb(68,164,244);
+  margin-top: 50rpx;
+}
+.active-zn {
+  background: rgb(68,164,244);
+  color: #fff;
+}
