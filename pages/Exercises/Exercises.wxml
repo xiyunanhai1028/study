@@ -14,6 +14,7 @@
 </view>
 <view class='zn-lx-2'>
   <view class='zn-lx-2-t'>(单选题）{{courseData.questionContent}}：</view>
+  <view wx:if="{{courseData.imageUrl}}" class="question-iv-box"><image src="https://wq.juren5280.com/eduOnline{{courseData.imageUrl}}"></image></view>
   <view class='zn-lx-2-ul'>
     <view class='zn-lx-2-li'>
       <view class='zn-lx-2-l'>

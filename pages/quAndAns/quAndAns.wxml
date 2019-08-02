@@ -14,6 +14,7 @@
   </view>
   <view>
     <view class='zn-lx-2-t'>(问答题）{{courseData.questionContent}}</view>
+     <view wx:if="{{courseData.imageUrl}}" class="question-iv-box"><image src="https://wq.juren5280.com/eduOnline{{courseData.imageUrl}}"></image></view>
     <view class='ans'>
         <!-- 答“坚持依法，自愿，有偿的基本原则。鼓励农户
         依法采取转包，出租，互换等方式流转承包地。没

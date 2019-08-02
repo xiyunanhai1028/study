@@ -69,3 +69,13 @@ page {
   background: rgb(68,164,244);
   color: #fff;
 }
+
+.question-iv-box{
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.question-iv-box image{
+  width: 500rpx;
+  height: 400rpx;
+}
